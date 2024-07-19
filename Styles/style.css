@@ -62,6 +62,7 @@ body{
     gap: 13px;
     position: absolute;
     bottom: 0;
+    padding: 15px 0;
 }
 
 .footer a{
@@ -85,13 +86,30 @@ body{
 .card >*{
     padding-top:10px;
 }
-.spotifyplaylist .card{
+.card-container{
+    display: flex;
+    margin: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 80vh;
+}
+ .card{
     padding: 10px;
     background-color: #252525;
     width: 200px;
 border-radius: 5px;
+position: relative;
 }
 .card img{
     width: 100%;
     object-fit: contain;
+}
+
+.play{
+    position: absolute;
+    top: 273px;
+    right: 17px;
+    opacity: 0;
+    transition: 1s ease-out;
 }
