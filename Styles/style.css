@@ -21,9 +21,6 @@ body{
 .right{
     width: 75vw;
 }
-.home{
-  
-}
 
 .home ul li{
     display: flex;
@@ -70,6 +67,7 @@ body{
 }
 .right{
     margin: 14.6px 0;
+    position: relative;
 }
 
 .header{
@@ -92,7 +90,7 @@ body{
     gap: 10px;
     flex-wrap: wrap;
     overflow-y: scroll;
-    max-height: 80vh;
+    max-height: 70vh;
 }
  .card{
     padding: 10px;
@@ -112,4 +110,46 @@ position: relative;
     right: 17px;
     opacity: 0;
     transition: 1s ease-out;
+}
+
+.buttons>*{
+margin: 0 12px;
+
+}
+
+.signupbtn{
+background-color: rgb(52, 51, 51);
+font-weight: bold;
+outline: none;
+border: none;
+font-size: 15px;
+cursor: pointer;
+}
+.signupbtn:hover{
+    color: white;
+    font-size: 17px;
+}
+.loginbtn{
+    background-color: white;
+    border-radius: 23px;
+    color: black;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+.loginbtn:hover{
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(4, 159, 27);
+    width: 100%;
+    padding: 12px;
 }
